@@ -1,0 +1,7 @@
+.settings-content-block
+	.settings-block
+.aquarium-content-block
+    .aquarium-elements-block#aquarium-elements
+        - for(var y = 14; y >= 0; y--)
+            -for(var x = 0; x < 25; x++)
+            	<div id="sn#{x}-#{y}" class="aquarium_element row_#{x}_col_#{y}" data-sn-x="#{x}" data-sn-y="#{y}"></div>
